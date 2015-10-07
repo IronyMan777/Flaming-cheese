@@ -1,22 +1,16 @@
-var sketchProc=function(processingInstance){ with (processingInstance){
+// @pjs preload must be used to preload the image
 
-// Setup
-size(900, 600);
+/* @pjs preload="squiggles.jpg"; */
 
-frameRate(60);
+PImage b;
 
+void setup() {
+	size(200,200);
+	b = loadImage("squiggles.jpg");
+	noLoop();
 
-background(0,0,0);
+}
 
 void draw() {
-	fill(0,0,0,30);
-	rect(0,0,width, height);
-	fill(255,255,255);
-	//ellipse(mouseX,mouseY,10,10);
+	image(b, 0, 0);
 }
-loop();
-
-
-
-
-}};
