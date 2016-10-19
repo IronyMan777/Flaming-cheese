@@ -1,14 +1,13 @@
-// @pjs preload must be used to preload the image
+/*@pjs preload="RA.jpg";*/
 
-@pjs preload="squiggles.jpg";
-
-PImage b;
+PImage test;
 
 void setup() {
-	size(200,200);
-	b = loadImage("squiggles.jpg");
+	size(800,600);
+	test = loadImage("RA.jpg");
 }
 
 void draw() {
-	image(b, 0, 0);
+	background(0,0,0);
+	image(test, 400, 300,100,100);
 }
